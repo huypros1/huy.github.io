@@ -1,0 +1,144 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container>header{
+    background-image: url('phongcanh.jpg'); 
+    background-size: 100% 100%; 
+    height:0px; 
+    padding-bottom:25%; 
+}
+.container>nav{
+    line-height:40px; 
+    background-color:orangered; 
+}
+.container>nav>ul{
+    margin: 0px;
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.container>nav>ul>li{
+    margin: 5px;
+}
+.container>nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+.menu>ul>li{
+    position: relative;
+}
+.menu ul ul{
+    position: absolute;
+    display: none;
+}
+.menu ul ul a{
+    display: block;
+}
+.menu>ul>li:hover>ul{
+    display: block;
+}
+.menu ul ul{
+    padding:0px; 
+    margin:0px; 
+    list-style:none; 
+    border-radius:3px; 
+    width:200px; 
+    background-color:white; 
+    box-shadow:0 0 1px gray;
+}
+.menu ul ul a{
+    line-height:30px; 
+    color:orangered; 
+    text-decoration:none; 
+    font-variant:small-caps; 
+    font-size:larger; 
+    padding:0 10px;
+}
+.menu ul ul a:hover{
+    background-color:orangered;
+    color:white;
+}
+.container>nav>a:hover{
+    color:yellow;
+}
+article{
+    min-height:400px; 
+    width:75%; 
+    background-color:white; 
+    float:left;
+}
+aside{
+    min-height:400px; 
+    width:25%; 
+    background-color:lightgray; 
+    float:right;
+}
+footer{
+    border-top:5px double orangered; 
+    line-height:50px; 
+    background-color:lightcyan; 
+    text-align:center; 
+    font-variant:small-caps; 
+    clear:both;
+}
+.vmenu {
+    padding: 0px; 
+    margin: 5px; 
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+.vmenu a {
+    background: url('dot1.jpg') no-repeat 10px center; 
+    display: block; 
+    border-bottom: 1px dotted orangered; 
+    color: orangered; 
+    font-variant: small-caps; 
+    font-size: 1.2em;
+    text-decoration: none; 
+    padding: 8px 2px 8px 30px;
+    transition: all 0.3s ease;
+}
+.vmenu a:hover {
+    background: url('dot2.jpg') no-repeat 10px center; 
+    border-bottom: 1px dotted white; 
+    background-color: orangered; 
+    color: white; 
+    font-weight: bold;
+    transform: translateY(-10px);
+}
+.vmenu a:active {
+    transform: scale(0.98);
+    background-color: #ff5733;
+}
+.vmenu a:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0.7);
+}
+.vmenu {
+    border: 2px solid orangered;
+}
+.video{
+    position: relative;;
+    justify-items: center;
+    padding-bottom: 30%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video>iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+}
